@@ -1,4 +1,5 @@
 package ru.netology.service;
+
 import static org.junit.Assert.assertEquals;
 
 public class CashBackHackServiceTest {
@@ -10,6 +11,7 @@ public class CashBackHackServiceTest {
         int expected = 0;
         assertEquals(expected, actual);
     }
+
     @org.junit.Test
     public void testBoundary() {
         CashbackHackService service = new CashbackHackService();
@@ -18,6 +20,7 @@ public class CashBackHackServiceTest {
         int expected = 500;
         assertEquals(expected, actual);
     }
+
     @org.junit.Test
     public void testRemainFor1Cashback() {
         CashbackHackService service = new CashbackHackService();
@@ -26,6 +29,7 @@ public class CashBackHackServiceTest {
         int expected = 1;
         assertEquals(expected, actual);
     }
+
     @org.junit.Test
     public void testRemainFor2Cashback() {
         CashbackHackService service = new CashbackHackService();
